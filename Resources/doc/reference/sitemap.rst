@@ -21,6 +21,7 @@ The service must implement the ``SourceIteratorInterface`` from the ``sonata-pro
         public function __construct($stop = 1000)
         {
             $this->stop = $stop;
+            $this->current = array();
         }
 
         public function current()
